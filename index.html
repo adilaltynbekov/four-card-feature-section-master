@@ -28,7 +28,7 @@
       <section class="cards__section">
         <header class="cards__header container">
           <h1 class="cards__title">
-            Reliable, efficient delivery Powered by Technology
+            <span>Reliable, efficient delivery</span><br />Powered by Technology
           </h1>
           <p class="cards__description">
             Our Artificial Intelligence powered tools use millions of project
@@ -37,19 +37,22 @@
         </header>
 
         <div class="cards__container container">
-          <article class="cards__card">
-            <h2 class="cards__card-title">Supervisor</h2>
-            <p class="cards__card-description">
-              Monitors activity to identify project roadblocks
-            </p>
-            <img
-              class="cards__card-img"
-              src="images/icon-supervisor.svg"
-              alt="Supervisor"
-            />
-          </article>
-          <div class="cards__card-container">
-            <article class="cards__card">
+          <div class="cards__side-container">
+            <article class="cards__card cards__supervisor-card">
+              <h2 class="cards__card-title">Supervisor</h2>
+              <p class="cards__card-description">
+                Monitors activity to identify project roadblocks
+              </p>
+              <img
+                class="cards__card-img"
+                src="images/icon-supervisor.svg"
+                alt="Supervisor"
+              />
+            </article>
+          </div>
+
+          <div class="cards__center-container">
+            <article class="cards__card cards__team-builder-card">
               <h2 class="cards__card-title">Team Builder</h2>
               <p class="cards__card-description">
                 Scans our talent network to create the optimal team for your
@@ -61,7 +64,7 @@
                 alt="Team Builder"
               />
             </article>
-            <article class="cards__card">
+            <article class="cards__card cards__karma-card">
               <h2 class="cards__card-title">Karma</h2>
               <p class="cards__card-description">
                 Regularly evaluates our talent to ensure quality
@@ -73,17 +76,21 @@
               />
             </article>
           </div>
-          <article class="cards__card">
-            <h2 class="cards__card-title">Calculator</h2>
-            <p class="cards__card-description">
-              Uses data from past projects to provide better delivery estimates
-            </p>
-            <img
-              class="cards__card-img"
-              src="images/icon-calculator.svg"
-              alt="Calculator"
-            />
-          </article>
+
+          <div class="cards__side-container">
+            <article class="cards__card cards__calculator-card">
+              <h2 class="cards__card-title">Calculator</h2>
+              <p class="cards__card-description">
+                Uses data from past projects to provide better delivery
+                estimates
+              </p>
+              <img
+                class="cards__card-img"
+                src="images/icon-calculator.svg"
+                alt="Calculator"
+              />
+            </article>
+          </div>
         </div>
       </section>
     </main>

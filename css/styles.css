@@ -1,52 +1,119 @@
+:root {
+  /* Primary */
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+
+  --Grey-500: hsl(234, 12%, 34%);
+  --Grey-400: hsl(212, 6%, 44%);
+  --White: hsl(0, 0%, 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+}
+
+.cards__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 .container {
-  max-width: 62.5rem;
+  max-width: 75rem;
   padding: 0 2rem;
   margin: 0 auto;
 }
 
-/* 
-flex-grow: 0;
-flex-shrink: 1;
-flex-basis: auto
-*/
-
 .cards__container {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
+  justify-content: center;
 }
 
-.cards__card-container {
+.cards__header {
+  color: var(--Grey-500);
+  text-align: center;
+  max-width: 37.5rem;
+  margin-bottom: 5rem;
+}
+
+.cards__title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.cards__title span {
+  font-weight: 200;
+}
+
+.cards__description {
+  font-weight: 400;
+}
+
+.cards__side-container,
+.cards__center-container {
+  flex: 1;
+}
+
+.cards__center-container {
   display: flex;
-  gap: 1rem;
   flex-direction: column;
-  align-items: center;
+  gap: 2rem;
 }
 
 .cards__card {
-  /* background-color: orangered; */
-  /* flex: 1; */
-  width: 222px;
+  background-color: var(--White);
+  padding: 2rem;
+  min-height: 15.5rem;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 1rem;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1);
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.cards__card:nth-child(1) {
-  border-top: 3px solid green;
+.cards__card-title {
+  color: var(--Grey-400);
+  margin-bottom: 0.5rem;
 }
-.cards__card:nth-child(2) {
-  border-top: 3px solid red;
+
+.cards__card-description {
+  color: var(--Grey-400);
 }
-.cards__card:nth-child(3) {
-  border-top: 3px solid yellow;
+
+.cards__card-img {
+  align-self: flex-end;
+  margin-top: auto;
 }
-.cards__card:nth-child(4) {
-  border-top: 3px solid blue;
+
+.cards__supervisor-card {
+  border-top: 5px solid var(--Cyan);
+}
+.cards__team-builder-card {
+  border-top: 5px solid var(--Red);
+}
+.cards__karma-card {
+  border-top: 5px solid var(--Orange);
+}
+.cards__calculator-card {
+  border-top: 5px solid var(--Blue);
 }
